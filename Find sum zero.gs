@@ -6,9 +6,7 @@ function findZeroSumCombinationsT() {
     var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
     var values = sheet.getRange(range).getValues().flat();
 }
-  //var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  //var range = sheet.getRange("B1:B20"); //you can adjust to take to final row
-  //var values = range.getValues().flat();
+  
   var result = [];
   findCombinations(values, [], 0, result);
   
